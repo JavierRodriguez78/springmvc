@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace ="layout/layout :: head"></head>
+<body>
+<header th:replace="layout/layout :: header"></header>
+<div class="offset-2 col-4">
+	<form action="#" th:action="@{/adduser}" th:object="${user}" method="post">
+	
+	<div class="form-group">
+		<label for="exampleuser">User</label>
+		<input type ="text" th:field="*{user}"
+			class="form-control" id="exampleUser"
+			aria-describedby="userHelp"
+			placeholder="Enter user">
+		</div>
+	<div class="form-group">
+		<label for="exampleInputPassword">Password</label>
+		<input type="password" th:field="*{pass}"
+			class="form-control" id="exmapleInputPassword"
+			placeholder="Introduce el pass">
+		<button type="submit" class="btn btn-primary">Aceptar</button> 
+	
+	</div>
+	
+	</form>
+
+</div>
+
+<footer th:replace="layout/layout::footer"></footer>
+
+</body>

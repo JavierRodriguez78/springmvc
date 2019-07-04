@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+	<meta charset="UTF-8">
+	<title>Página de error</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+</head>
+<body>
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<h1 class="display-4">500</h1>
+			<p class="lead">Página de error </p>
+			<span th:text="${url}"/>
+			<span th:text="${exception.message}"/>
+			<img th:src="@{/images/error500.png}"/>
+			
+		</div>
+	</div>
+</body>
+
+
+
+</html>

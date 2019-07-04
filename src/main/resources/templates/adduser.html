@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace ="layout/layout :: head"></head>
+<body>
+<header th:replace="layout/layout :: header"></header>
+<div class="offset-2 col-4">
+	<h1>USUARIO AÑADIDO</h1>
+	<h2>Usuario: <span th:text="${user.user}"></span></h2>
+	<h2>Pass: <span th:text="${user.pass}"></span></h2>
+</div>
+
+<footer th:replace="layout/layout::footer"></footer>
+
+</body>

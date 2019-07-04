@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head th:replace="layout/layout::head"></head>
+
+<body>
+	<header th:replace="layout/layout :: header"></header>
+
+	<h1>Usuarios</h1>
+	<ul th:each="user: ${Users}">
+		<li th:text="${user.user}"></li>
+		<li th:text="${user.pass}"></li>
+	</ul>
+	<footer th:replace="layout/layout :: footer"></footer>
+</body>
+
+</html>
